@@ -3,7 +3,6 @@ const navLinks = [
   { label: 'How It Works', href: '#how-it-works' },
   { label: 'About', href: '#about' },
   { label: 'Request a Reset', href: '#request' },
-  { label: 'Connect', href: '#connect' },
 ];
 
 export default function Footer() {
