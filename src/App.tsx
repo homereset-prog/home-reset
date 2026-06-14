@@ -8,6 +8,7 @@ import GoodFit from './components/GoodFit';
 import About from './components/About';
 import RequestForm from './components/RequestForm';
 import ServiceArea from './components/ServiceArea';
+import Connect from './components/Connect';
 import Footer from './components/Footer';
 
 export default function App() {
@@ -24,6 +25,7 @@ export default function App() {
         <About />
         <RequestForm />
         <ServiceArea />
+        <Connect />
       </main>
       <Footer />
     </div>
