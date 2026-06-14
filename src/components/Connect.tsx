@@ -3,7 +3,7 @@ import { ExternalLink, Phone, Mail } from 'lucide-react';
 const actions = [
   {
     label: 'Request a Reset',
-    description: 'Tell us what kind of reset you need.',
+    description: 'Start with the quick request form.',
     href: '#request',
     icon: <ExternalLink size={20} />,
   },
@@ -15,8 +15,8 @@ const actions = [
   },
   {
     label: 'Email',
-    description: 'spectrumhomereset@gmail.com',
-    href: 'mailto:spectrumhomereset@gmail.com',
+    description: 'Send a message.',
+    href: 'mailto:SpectrumHomeReset@gmail.com',
     icon: <Mail size={20} />,
   },
 ];
@@ -29,7 +29,7 @@ export default function Connect() {
           Connect with Spectrum Home Reset
         </h2>
         <p className="text-base md:text-lg text-navy-400 leading-relaxed mb-10">
-          Request a reset, ask a question, or reach out directly.
+          Have a space you're not sure how to describe? Reach out easily by filling out our form, phone, or email. Virtual walk-throughs may be available by Google Meet so we can better understand the project before booking.
         </p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 text-left">
