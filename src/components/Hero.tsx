@@ -1,11 +1,3 @@
-import { Heart, Home, Users } from 'lucide-react';
-
-const chips = [
-  { icon: Heart, label: 'Judgment-free' },
-  { icon: Home, label: 'Project-based help' },
-  { icon: Users, label: 'Family-friendly' },
-];
-
 export default function Hero() {
   return (
     <section
@@ -42,19 +34,7 @@ export default function Hero() {
               </a>
             </div>
 
-            <div className="mt-5 flex flex-wrap gap-2">
-              {chips.map(({ icon: Icon, label }) => (
-                <div
-                  key={label}
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-cream-200 shadow-soft text-navy-500 text-sm font-medium"
-                >
-                  <Icon size={15} className="text-sage-500 flex-shrink-0" />
-                  {label}
-                </div>
-              ))}
-            </div>
-
-            <p className="mt-5 text-sm text-navy-400/75 italic">
+            <p className="mt-6 text-sm text-navy-400/75 italic">
               No shame. No judgment. Just practical help getting your home back to manageable.
             </p>
           </div>
