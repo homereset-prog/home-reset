@@ -1,24 +1,39 @@
 export default function About() {
   return (
     <section id="about" className="py-16 md:py-24 px-4 sm:px-6 bg-cream-100">
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <h2 className="font-serif text-2xl sm:text-3xl md:text-4xl font-semibold text-navy-500 mb-10">
           Hi, I'm Keri.
         </h2>
 
-        <div className="space-y-5 text-base md:text-lg text-navy-400 leading-relaxed">
-          <p>I'm a mom of three and the founder of Spectrum Home Reset.</p>
+        {/* Intro: text + illustration side by side */}
+        <div className="grid md:grid-cols-2 gap-8 lg:gap-12 items-center mb-10">
+          <div className="space-y-5 text-base md:text-lg text-navy-400 leading-relaxed">
+            <p>I'm a mom of three and the founder of Spectrum Home Reset.</p>
 
-          <p>
-            I created Spectrum Home Reset because I know what it's like when life gets overwhelming.
-            Laundry piles up. Boxes stay packed. A room becomes a catch-all space. The fridge needs
-            attention. Projects get started but never seem to get finished.
-          </p>
+            <p>
+              I created Spectrum Home Reset because I know what it's like when life gets
+              overwhelming. Laundry piles up. Boxes stay packed. A room becomes a catch-all space.
+              The fridge needs attention. Projects get started but never seem to get finished.
+            </p>
 
-          <p>Sometimes people don't need a cleaning service.</p>
+            <p>Sometimes people don't need a cleaning service.</p>
 
-          <p className="font-medium text-navy-500">They need a place to start.</p>
+            <p className="font-medium text-navy-500">They need a place to start.</p>
+          </div>
 
+          <div className="flex justify-center md:justify-end">
+            <img
+              src="/images/family_love_and_reassurance_illustration.png"
+              alt="Keri and her family — Spectrum Home Reset reassurance illustration"
+              className="w-full h-auto object-contain rounded-2xl"
+              style={{ maxWidth: '560px' }}
+            />
+          </div>
+        </div>
+
+        {/* Remaining content */}
+        <div className="max-w-3xl space-y-5 text-base md:text-lg text-navy-400 leading-relaxed">
           <p>
             My background includes professional cleaning, trauma-informed yoga, peer support
             training, mindfulness education, and years of supporting families through real-life
@@ -48,27 +63,10 @@ export default function About() {
             transitions, or simply too much on their plate. Whatever brought you here, you don't
             need to be embarrassed by the current state of your home.
           </p>
-        </div>
 
-        {/* Callout block */}
-        <div className="my-8 md:my-10 rounded-2xl bg-white border-l-4 border-sage-400 shadow-soft px-6 py-6 md:px-8 md:py-7 space-y-3">
-          {[
-            "You don't need to clean before I arrive.",
-            "You don't need to apologize for the laundry pile.",
-            "You don't need to have it all figured out.",
-          ].map((line) => (
-            <p key={line} className="font-serif text-base md:text-lg font-medium text-sage-600 leading-relaxed">
-              {line}
-            </p>
-          ))}
-        </div>
-
-        <div className="space-y-5 text-base md:text-lg text-navy-400 leading-relaxed">
           <p>You just need a place to start.</p>
 
-          <p>
-            At Spectrum Home Reset, the goal isn't perfection.
-          </p>
+          <p>At Spectrum Home Reset, the goal isn't perfection.</p>
 
           <p>
             The goal is helping your home feel functional, manageable, and supportive of your
