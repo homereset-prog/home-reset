@@ -1,4 +1,4 @@
-import { ExternalLink, ClipboardList, ImagePlus } from 'lucide-react';
+import { ExternalLink, ClipboardList } from 'lucide-react';
 
 const FORM_DIRECT = 'https://docs.google.com/forms/d/e/1FAIpQLSeHkE6yR0ZedJcaKDQ-ejIFIIRQ44DYvTDqUCJdKFOLvZXXyg/viewform';
 
@@ -17,7 +17,7 @@ export default function RequestForm() {
         </div>
 
         <div className="rounded-2xl border border-cream-200 bg-cream-50 shadow-card p-8 md:p-10">
-          <div className="flex items-start gap-4 mb-6">
+          <div className="flex items-start gap-4 mb-8">
             <span className="w-12 h-12 rounded-xl bg-sage-100 flex items-center justify-center flex-shrink-0">
               <ClipboardList size={24} className="text-sage-600" />
             </span>
@@ -30,11 +30,6 @@ export default function RequestForm() {
                 may also upload photos through the form to help us better understand the space.
               </p>
             </div>
-          </div>
-
-          <div className="flex items-center gap-3 px-4 py-3 rounded-xl bg-white border border-cream-200 text-navy-400 text-sm mb-7">
-            <ImagePlus size={16} className="text-sage-500 flex-shrink-0" />
-            <span>Photo uploads are supported — share images of the space to help us prepare.</span>
           </div>
 
           <a
