@@ -1,11 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
+const FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSeHkE6yR0ZedJcaKDQ-ejIFIIRQ44DYvTDqUCJdKFOLvZXXyg/viewform';
+
 const navLinks = [
   { label: 'Services', href: '#services' },
   { label: 'How It Works', href: '#how-it-works' },
   { label: 'About', href: '#about' },
-  { label: 'Request a Reset', href: '#request' },
+  { label: 'Request a Reset', href: FORM_URL, external: true },
 ];
 
 export default function Header() {
@@ -58,7 +60,9 @@ export default function Header() {
               </a>
             ))}
             <a
-              href="#request"
+              href={FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="ml-2 px-5 py-2.5 rounded-xl bg-sage-600 hover:bg-sage-700 text-white font-semibold text-sm transition-all duration-200 shadow-sm hover:shadow-md"
             >
               Request a Reset
@@ -86,6 +90,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={closeMenu}
+                {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                 className="px-4 py-3 rounded-xl text-navy-500 hover:bg-cream-100 hover:text-sage-500 font-medium text-base transition-colors duration-150"
               >
                 {link.label}

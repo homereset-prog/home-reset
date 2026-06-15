@@ -21,7 +21,9 @@ export default function Hero() {
 
             <div className="mt-7 flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
               <a
-                href="#request"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeHkE6yR0ZedJcaKDQ-ejIFIIRQ44DYvTDqUCJdKFOLvZXXyg/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-7 py-3.5 rounded-xl bg-sage-600 hover:bg-sage-700 text-white font-semibold text-base transition-all duration-200 shadow-md hover:shadow-hover text-center"
               >
                 Request a Reset

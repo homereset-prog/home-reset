@@ -1,8 +1,10 @@
+const FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSeHkE6yR0ZedJcaKDQ-ejIFIIRQ44DYvTDqUCJdKFOLvZXXyg/viewform';
+
 const navLinks = [
   { label: 'Services', href: '#services' },
   { label: 'How It Works', href: '#how-it-works' },
   { label: 'About', href: '#about' },
-  { label: 'Request a Reset', href: '#request' },
+  { label: 'Request a Reset', href: FORM_URL, external: true },
   { label: 'Connect', href: '#connect' },
 ];
 
@@ -42,6 +44,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
+                    {...(link.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                     className="text-navy-100 hover:text-white text-sm transition-colors duration-150"
                   >
                     {link.label}

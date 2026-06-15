@@ -1,22 +1,27 @@
 import { ExternalLink, Phone, Mail } from 'lucide-react';
 
+const FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSeHkE6yR0ZedJcaKDQ-ejIFIIRQ44DYvTDqUCJdKFOLvZXXyg/viewform';
+
 const actions = [
   {
     label: 'Request a Reset',
     description: 'Start with the quick request form.',
-    href: '#request',
+    href: FORM_URL,
+    external: true,
     icon: <ExternalLink size={20} />,
   },
   {
     label: 'Call or Text',
     description: '720-778-0980',
     href: 'tel:+17207780980',
+    external: false,
     icon: <Phone size={20} />,
   },
   {
     label: 'Email',
     description: 'Send a message.',
     href: 'mailto:SpectrumHomeReset@gmail.com',
+    external: false,
     icon: <Mail size={20} />,
   },
 ];
@@ -37,6 +42,7 @@ export default function Connect() {
             <a
               key={action.label}
               href={action.href}
+              {...(action.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
               className="flex flex-col items-center text-center gap-3 px-6 py-6 rounded-xl bg-white border border-cream-200 shadow-soft hover:shadow-card hover:border-cream-300 transition-all duration-200"
             >
               <span className="flex-shrink-0 text-sage-600">{action.icon}</span>

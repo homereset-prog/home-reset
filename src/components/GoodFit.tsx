@@ -92,7 +92,9 @@ export default function GoodFit() {
             Not sure if your project fits? Reach out and ask — we'll let you know if it sounds like a good match.
           </p>
           <a
-            href="#request"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeHkE6yR0ZedJcaKDQ-ejIFIIRQ44DYvTDqUCJdKFOLvZXXyg/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-sage-600 hover:bg-sage-700 text-white font-semibold text-sm transition-all duration-200 shadow-sm hover:shadow-md"
           >
             <CheckCircle size={18} />
